@@ -1,0 +1,9 @@
+<h2>Choose a restaurant</h2>
+
+<div class="list-group">
+  {{#each model}}
+    {{#link-to 'restaurants.show' id class='list-group-item'}}{{name}}{{/link-to}}
+  {{else}}
+    <a href='#' class="list-group-item"><i class='fa fa-frown'/>There are no restaurants</a>
+  {{/each}}
+</div>
