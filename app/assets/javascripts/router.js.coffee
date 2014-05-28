@@ -2,4 +2,4 @@
 
 LePetitBis.Router.map ()->
   @resource 'restaurants', ->
-    @route "show", path: "/:restaurant_id"
+    @route "order", path: "/:restaurant_id/order"

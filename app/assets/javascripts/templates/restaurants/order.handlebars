@@ -1,0 +1,19 @@
+<ol class="breadcrumb">
+  <li>{{#link-to 'restaurants.index'}}Restaurants{{/link-to}}</li>
+  <li class="active">{{restaurant.name}}</li>
+</ol>
+<div class='page-header'>
+<h1>{{restaurant.name}}</h1>
+</div>
+
+<div class="list-group" dir='rtl'>
+  {{#each fields}}
+     {{boolean-field field=field}}
+  {{else}}
+    There are no Fields
+  {{/each}}
+</div>
+
+<button {{action 'save'}} class='btn btn-large btn-primary pull-right'>
+  Save
+</button>

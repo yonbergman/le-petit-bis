@@ -2,7 +2,7 @@
 
 <div class="list-group">
   {{#each model}}
-    {{#link-to 'restaurants.show' id class='list-group-item'}}{{name}}{{/link-to}}
+    {{#link-to 'restaurants.order' id class='list-group-item'}}{{name}}{{/link-to}}
   {{else}}
     <a href='#' class="list-group-item"><i class='fa fa-frown'/>There are no restaurants</a>
   {{/each}}
